@@ -1,0 +1,9 @@
+@media screen and (min-width: 720px) {
+  .myDataContainer .myDataContent label {
+    width: 30%;
+  }
+  .myDataContainer .myDataContent label input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=myData.css.map */

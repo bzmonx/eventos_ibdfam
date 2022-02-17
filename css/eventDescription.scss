@@ -1,0 +1,169 @@
+.eventDescriptionContainer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .eventImage {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .eventDescriptionContent {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        background-color: white;
+    }
+}
+
+.eventOptions {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+
+    nav {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: white;
+        border-top: 1px solid black;
+
+        button{
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: white;
+
+
+            &:hover{
+                background-color: rgb(167, 155, 155);
+            }
+        }
+    }
+
+    .programation{
+        display: none;
+        width: 100%;
+        
+
+        .programationContent{
+            width: 100%;
+            display: flex;
+            margin: 0.5rem 0;
+            border-bottom: 1px solid black;
+
+            .time{
+                min-width: 60px;
+                display: flex;
+                align-items: center;
+                border-right:1px solid black;
+            }
+            .speakerAndTheme{
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .allSpeakers{
+        display:none;
+        width: 100%;
+
+        .speakerInformationContainer{
+            margin-bottom: 0.5rem;
+            display:flex;
+
+            .speakerContent{
+                margin-left:0.2rem;
+            }
+        }
+    }
+
+    .buyTickets {
+        display: none;
+        justify-content: space-around;
+        flex-direction: column;
+
+        .purchaseOption {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 1rem;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            background-color: white;
+            font-weight: bold;
+
+            .buyBtn {
+                border: none;
+                padding: 0.2rem 0.5rem;
+                border-radius: 1rem;
+                background-color: rgb(133, 187, 231);
+                color: white;
+                font-weight: bold;
+                transition: all 0.5s;
+
+                &:hover {
+                    background-color: rgb(55, 152, 231);
+                }
+            }
+        }
+    }
+
+
+    .active{
+        display: block;
+    }
+    .activeFlex{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 980px){
+    .buyTickets {
+        width: 100%;
+        align-items: center;
+
+        .buyTicketContent{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 0.5rem;
+            .purchaseOption {
+                width: 100%;
+                max-width:300px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 1rem;
+                border-radius: 1rem;
+                padding: 0.5rem;
+                background-color: white;
+                font-weight: bold;
+    
+                .buyBtn {
+                    border: none;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 1rem;
+                    background-color: rgb(133, 187, 231);
+                    color: white;
+                    font-weight: bold;
+                    transition: all 0.5s;
+    
+                    &:hover {
+                        background-color: rgb(55, 152, 231);
+                    }
+                }
+            }
+        }
+        
+    }
+}

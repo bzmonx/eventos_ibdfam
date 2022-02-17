@@ -1,0 +1,34 @@
+.myEventsContainer .myEventsContent {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.myEventsContainer .ended {
+  background-color: red;
+  color: white;
+}
+
+.myEventsContainer .coming {
+  background-color: orange;
+  color: white;
+}
+
+.myEventsContainer .happening {
+  background-color: #2fff39;
+  color: white;
+}
+
+@media screen and (min-width: 980px) {
+  .myEventsContainer .myEventsContent {
+    margin: 0 auto;
+    width: 60%;
+    max-width: 1000px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+}
+/*# sourceMappingURL=myEvents.css.map */

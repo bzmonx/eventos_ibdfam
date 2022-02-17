@@ -1,0 +1,393 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+body i {
+  color: white;
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+header .myNavbar {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #85bbe7;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 0 0 0.5em black;
+          box-shadow: 0 0 0.5em black;
+}
+
+header .myNavbar a {
+  color: white;
+  font-weight: bold;
+}
+
+header .myNavbar .logIn {
+  background-color: #85bbe7;
+  padding: 0.2rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+header .myNavbar .logIn a {
+  color: white;
+}
+
+header .myNavbar .logIn i {
+  color: white;
+  padding-right: 0.2rem;
+}
+
+header .myNavbar .logIn :hover {
+  opacity: 0.8;
+}
+
+header .myNavbar .logIn:hover > i {
+  opacity: 0.8;
+}
+
+header .myNavbar .loggedIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+header .myNavbar .loggedIn a {
+  color: black;
+}
+
+header .myNavbar .loggedIn .myAccount {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .myNavbar .loggedIn .myAccount .dropdown-toggle {
+  background-color: #85bbe7;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+header .myNavbar .loggedIn .myAccount .dropdown-toggle:hover {
+  opacity: 0.8;
+}
+
+header .myNavbar .loggedIn .myAccount .btnMyAccount {
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #85bbe7;
+}
+
+header .myNavbar .loggedIn .myAccount .btnMyAccount:hover {
+  opacity: 0.8;
+}
+
+header .myNavbar .loggedIn .myAccount .fa-arrow-down {
+  font-size: 0.8rem;
+}
+
+header .myNavbar .loggedIn .signOut .btnSignOut {
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #85bbe7;
+}
+
+header .myNavbar .loggedIn .signOut :hover {
+  opacity: 0.8;
+}
+
+header .myNavbar .loggedIn .dropdown-menu i {
+  color: black;
+}
+
+header .myNavbar .loggedIn .dropdown-menu .dropdown-item {
+  margin-top: 0.2rem;
+}
+
+header .myNavbar .createAccount {
+  background-color: red;
+  padding: 0.1rem 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+header .myNavbar .createAccount:hover {
+  opacity: 0.8;
+}
+
+header .myNavbar .navbarSearch {
+  padding: 0.1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
+}
+
+header .myNavbar .navbarSearch:focus {
+  padding: 0.2rem 5rem;
+}
+
+header .myNavbar .hamburger {
+  display: block;
+  z-index: 999;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0;
+  position: relative;
+  right: -60px;
+  cursor: pointer;
+  display: block;
+  -webkit-transition: 0.6s easy;
+  transition: 0.6s easy;
+}
+
+header .myNavbar .hamburger:before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 70%;
+  height: 5%;
+  border-radius: 5%;
+  background-color: #fff;
+}
+
+header .myNavbar .hamburger:after {
+  content: "";
+  position: absolute;
+  bottom: 35%;
+  right: 15%;
+  width: 70%;
+  height: 5%;
+  border-radius: 5%;
+  background-color: #fff;
+}
+
+header .myNavbar .menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  background-color: #85bbe7;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+  padding: 100px 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  -webkit-box-shadow: 0 0 0.5em black;
+          box-shadow: 0 0 0.5em black;
+}
+
+header .myNavbar .menu.active {
+  right: 0;
+}
+
+header .myNavbar .menu.active li a {
+  display: block;
+  padding: 10px 15px;
+  color: #555;
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+header .myNavbar .menu.active li a:hover {
+  color: #fff;
+}
+
+header .myNavbar .menuSearch {
+  display: none;
+}
+
+header .myNavbar form input {
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
+
+header .myNavbar form input[type="submit"] {
+  padding: 0.1rem 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  header .myNavbar {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .myNavbar .logo {
+    display: none;
+  }
+  header .myNavbar .navbarSearch {
+    display: none;
+  }
+  header .myNavbar .myAccount {
+    width: 250px;
+  }
+  header .myNavbar .hamburger {
+    display: block;
+    z-index: 999;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    right: 0;
+  }
+  header .myNavbar .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    background-color: #85bbe7;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    padding: 100px 20px;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+  }
+  header .myNavbar .menu.active {
+    right: 0;
+  }
+  header .myNavbar .menuSearch {
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0.1rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header .myNavbar {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .myNavbar .myAccount {
+    width: 250px;
+  }
+  header .myNavbar .createAccount {
+    display: none;
+  }
+  header .myNavbar .logo {
+    display: none;
+  }
+  header .myNavbar .navbarSearch {
+    display: none;
+  }
+  header .myNavbar .hamburger {
+    display: block;
+    z-index: 999;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    right: 0;
+  }
+  header .myNavbar .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    background-color: #85bbe7;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    padding: 100px 20px;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+  }
+  header .myNavbar .menu.active {
+    right: 0;
+  }
+  header .myNavbar .menuSearch {
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0.1rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/*MAIN*/
+main {
+  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(214, 221, 152, 0.534);
+}
+
+main .allEventsBtn {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #85bbe7;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main .allEventsBtn:hover {
+  background-color: #3798e7;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  height: 100px;
+}
+/*# sourceMappingURL=main.css.map */

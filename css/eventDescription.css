@@ -1,0 +1,216 @@
+.eventDescriptionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eventDescriptionContainer .eventImage {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.eventDescriptionContainer .eventDescriptionContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+.eventOptions {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.eventOptions nav {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+.eventOptions nav button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.eventOptions nav button:hover {
+  background-color: #a79b9b;
+}
+
+.eventOptions .programation {
+  display: none;
+  width: 100%;
+}
+
+.eventOptions .programation .programationContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid black;
+}
+
+.eventOptions .programation .programationContent .time {
+  min-width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid black;
+}
+
+.eventOptions .programation .programationContent .speakerAndTheme {
+  margin-left: 1rem;
+}
+
+.eventOptions .allSpeakers {
+  display: none;
+  width: 100%;
+}
+
+.eventOptions .allSpeakers .speakerInformationContainer {
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eventOptions .allSpeakers .speakerInformationContainer .speakerContent {
+  margin-left: 0.2rem;
+}
+
+.eventOptions .buyTickets {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.eventOptions .buyTickets .purchaseOption {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-weight: bold;
+}
+
+.eventOptions .buyTickets .purchaseOption .buyBtn {
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  background-color: #85bbe7;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.eventOptions .buyTickets .purchaseOption .buyBtn:hover {
+  background-color: #3798e7;
+}
+
+.eventOptions .active {
+  display: block;
+}
+
+.eventOptions .activeFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 980px) {
+  .buyTickets {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .buyTickets .buyTicketContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+  }
+  .buyTickets .buyTicketContent .purchaseOption {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+    font-weight: bold;
+  }
+  .buyTickets .buyTicketContent .purchaseOption .buyBtn {
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    background-color: #85bbe7;
+    color: white;
+    font-weight: bold;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .buyTickets .buyTicketContent .purchaseOption .buyBtn:hover {
+    background-color: #3798e7;
+  }
+}
+/*# sourceMappingURL=eventDescription.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAEQ,gBAFQ,CACZ,cAAc,CACV,KAAK,CAAC;IACF,KAAK,EAAE,GAAG;GAIb;EAPT,AAIY,gBAJI,CACZ,cAAc,CACV,KAAK,CAED,KAAK,CAAC;IACF,KAAK,EAAE,IAAI;GACd",
+    "sources": [
+        "myData.scss"
+    ],
+    "names": [],
+    "file": "myData.css"
+}

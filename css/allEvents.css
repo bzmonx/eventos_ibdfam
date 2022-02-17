@@ -1,0 +1,106 @@
+main .allEventsContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .allEventsContainer nav {
+  margin: 0 auto;
+  padding: 0.2rem;
+  width: 100%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
+}
+
+main .allEventsContainer nav .allEventsSearch {
+  -webkit-transition: padding 0.5s;
+  transition: padding 0.5s;
+}
+
+main .allEventsContainer nav .allEventsSearch:focus {
+  padding: 0.2rem 2rem;
+}
+
+main .allEventsContainer nav .allEventsSearch {
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.1rem;
+}
+
+main .allEventsContainer .allEventsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .allEventsContainer .allEventsContent .eventContainer {
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #d87878;
+  margin: 0.3rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+main .allEventsContainer .allEventsContent .eventContainer .btnDetails {
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  background: #85bbe7;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main .allEventsContainer .allEventsContent .eventContainer .btnDetails:hover {
+  background-color: #3798e7;
+}
+
+@media screen and (min-width: 980px) {
+  main .allEventsContainer .allEventsContent {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .allEventsContainer .allEventsContent .eventContainer {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    background-color: #d87878;
+    margin: 0.3rem;
+    font-weight: bold;
+    border-radius: 1rem;
+  }
+}
+/*# sourceMappingURL=allEvents.css.map */
